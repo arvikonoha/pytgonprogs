@@ -4,21 +4,10 @@ from tkinter import messagebox
 
 db = pymysql.connect(host='localhost',
                      user='root',
-                     password='*******',
+                     password='nevergivup99',
                      db='empdb')
 
 curser = db.cursor()
-
-curser.execute("DROP TABLE IF EXISTS STUDENT")
-
-curser.execute("""
-  CREATE TABLE STUDENT(
-    USN VARCHAR(10),
-    NAME VARCHAR(20),
-    AGE INTEGER,
-    BRANCH VARCHAR(15)
-  )
-""")
 
 window = Tk()
 
@@ -55,7 +44,7 @@ def search():
                 messagebox.showinfo("success", "Record obtained")
                 nameT.set(row[1])
                 ageT.set(row[2])
-                branchT(row[3])
+                branchT.set(row[3])
             else:
                 messagebox.showinfo("error", "THERE IS NO SUCH RECORD")
         except:
