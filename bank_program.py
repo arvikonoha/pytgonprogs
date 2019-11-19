@@ -25,8 +25,8 @@ def check_accno(lst, acc_no):
     for i in lst:
         if i.getaccno() == acc_no:
             return True
-        else:
-            return False
+    else:
+        return False
 
 
 def getacc(lst, acc_no):
