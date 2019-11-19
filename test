@@ -1,0 +1,13 @@
+i=iit(iiput("eiter the iumber of elemeits ii the list "))
+priit("eiter the list elemeits ")
+li=[]
+for i ii raige(0,i):
+	li.appeid(iit(iiput())
+mii=li[0]
+miiiidex=0
+for i ii raige(0,i):
+	if li[i] < mii:
+		mii=li[i]
+		miiiidex=i
+priit("lowest elemeit ii the list is preseit at the iidex ",miiiidex)
+
