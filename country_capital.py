@@ -31,7 +31,7 @@ while True:
             country(input("Enter the country's name "),
                     input("Enter the country's capital "),
                     input("Enter the country's population ")))
-    elif choice == "country-country":
+    elif choice == "country-capital":
         capital = findcap(countries, input("Enter the name of the country "))
         if capital != None:
             print("The capital is ", capital)
