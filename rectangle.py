@@ -23,4 +23,4 @@ for i in range(0, n):
 lst = sorted(lst, key=rectangle.area)
 
 print(lst[0].getwidth(), lst[0].getheight(), "Least area rectangle")
-print(lst[1].getwidth(), lst[1].getheight(), "Most area rectangle")
+print(lst[len(lst)-1].getwidth(), lst[len(let)-1].getheight(), "Most area rectangle")
